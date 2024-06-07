@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Food Menu ::::::</h1>
+      <h1>Food Menu ::</h1>
       <ul>
         {foods.map(food => (
           <li key={food._id}>
