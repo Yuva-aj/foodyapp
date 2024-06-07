@@ -6,7 +6,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: backend
+    container_name: backend-container
     networks:
       my-net:
         ipv4_address: 172.20.0.10
@@ -17,7 +17,7 @@ services:
       dockerfile: Dockerfile
       args:
         - REACT_APP_END_POINT=172.20.0.10
-    container_name: frontend
+    container_name: frontend-container
     networks:
       - my-net
     environment:
